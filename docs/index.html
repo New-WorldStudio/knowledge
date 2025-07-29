@@ -13,10 +13,19 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: ''
+      repo: '',
+      loadSidebar: true,  // 定制侧边栏
+      
+      subMaxLevel: 2,
+      search: {
+        placeholder: '🔍  搜索文档',
+        noData: '找不到结果',
+        depth: 2,
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
